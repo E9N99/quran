@@ -1,7 +1,7 @@
 {
-    "name": "Quran",
-    "description": " تشغيل القرآن الكريم.",
-    "logo": ".",
+    "name": "سورس تيبثون قران",
+    "description": " يمكنك تشغيل الملفات الصوتية في مباشرتا في القنوات والمجموعات .",
+    "logo": "https://telegra.ph/file/7cc32655659b325cc0f53.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -91,7 +91,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "~  لاتغيرها أبدا .",
-        "value": "https://github.com/DevTeto/AFmusic",
+        "value": "https://github.com/RRYR7/quran",
         "required": true
       }
     },
