@@ -1,7 +1,7 @@
 {
-    "name": "احدث نسخة من سورس تيتو!!",
-    "description": " يمكنك تشغيل الملفات الصوتية في مباشرتا في القنوات والمجموعات .",
-    "logo": "https://telegra.ph/file/7cc32655659b325cc0f53.jpg",
+    "name": "Quran",
+    "description": " تشغيل القرآن الكريم.",
+    "logo": ".",
     "keywords": [
     "python3",
     "telegram",
