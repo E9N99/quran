@@ -35,6 +35,7 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
+        pass
         importlib.import_module("AarohiX.plugins" + all_module)
     LOGGER("AarohiX.plugins").info(" تنزيل معلومات السورس ")
     await userbot.start()
