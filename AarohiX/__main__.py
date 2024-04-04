@@ -33,9 +33,8 @@ async def init():
     except:
         pass
     await app.start()
-    for all_module in ALL_MODULES:
-        pass
-        importlib.import_module("AarohiX.plugins" + all_module)
+   # for all_module in ALL_MODULES:
+     #   importlib.import_module("AarohiX.plugins" + all_module)
     LOGGER("AarohiX.plugins").info(" تنزيل معلومات السورس ")
     await userbot.start()
     await Dil.start()
