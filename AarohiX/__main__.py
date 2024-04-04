@@ -8,6 +8,7 @@ import config
 from AarohiX import LOGGER, app, userbot
 from AarohiX.core.call import Dil
 from AarohiX.misc import sudo
+from Aarohix.Modules import ALL_MODULES
 from AarohiX.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
@@ -33,8 +34,8 @@ async def init():
     except:
         pass
     await app.start()
-   # for all_module in ALL_MODULES:
-     #   importlib.import_module("AarohiX.plugins" + all_module)
+    for all_module in ALL_MODULES:
+        importlib.import_module("AarohiX.plugins" + all_module)
     LOGGER("AarohiX.plugins").info(" تنزيل معلومات السورس ")
     await userbot.start()
     await Dil.start()
