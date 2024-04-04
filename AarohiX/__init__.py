@@ -3,7 +3,7 @@ from AarohiX.core.dir import dirr
 from AarohiX.core.git import git
 from AarohiX.core.userbot import Userbot
 from AarohiX.misc import dbb, heroku
-from AarohiX import ALL_MODULES
+from AarohiX.plugins import ALL_MODULES
 from .logging import LOGGER
 
 dirr()
