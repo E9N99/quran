@@ -105,7 +105,7 @@ async def azkar():
      prayer = prayer_time()
      await kill()
      for i in chat:
-       await app.send_message(i, f"**⋙ حـان الآن موعـد آذان {prayer) في الأردن 🕌**")
+       await app.send_message(i, f"**⋙ حـان الآن موعـد آذان {prayer} في الأردن 🕌**")
        await play(i)
      await asyncio.sleep(174)
      await kill()
