@@ -8,7 +8,7 @@ import config
 from AarohiX import LOGGER, app, userbot
 from AarohiX.core.call import Dil
 from AarohiX.misc import sudo
-from Aarohix.Modules import ALL_MODULES
+from AarohiX.plugins import ALL_MODULES
 from AarohiX.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
