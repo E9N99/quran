@@ -91,7 +91,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "~  لاتغيرها أبدا .",
-        "value": "https://github.com/RRYR7/quran",
+        "value": "https://github.com/E9N99/quran",
         "required": true
       }
     },
