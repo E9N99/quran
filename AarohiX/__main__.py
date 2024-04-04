@@ -13,7 +13,6 @@ from AarohiX.plugins.play.azan import azkar
 from AarohiX.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
-
 async def init():
     if (
         not config.STRING1
@@ -22,7 +21,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER(__name__).error("Assistant client variables not defined, exiting...")
+        LOGGER.info("Assistant client variables not defined, exiting...")
         exit()
     await sudo()
     try:
@@ -36,29 +35,24 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("AarohiX.plugins" + all_module)
-    LOGGER("AarohiX.plugins").info(" تنزيل معلومات السورس ")
+        importlib.import_module("AarohiX.plugins." + all_module)
+    LOGGER.info("تنزيل معلومات السورس")
     await userbot.start()
     await Dil.start()
     try:
         await Dil.stream_call("https://te.legra.ph/file/39b302c93da5c457a87e3.mp4")
     except NoActiveGroupCall:
-        LOGGER("AarohiX").error(
-            "ʙsᴅᴋ ᴠᴄ ᴛᴏ ᴏɴ ᴋᴀʀʟᴇ  ʟᴏɢ ɢʀᴏᴜᴘ\ᴄʜᴀɴɴᴇʟ ᴋɪ.\n\n ᴏɴ ᴋᴀʀᴋᴇ ᴀᴀ ᴛᴀʙ ᴛᴀᴋ ʙᴏᴛ ʙᴀɴᴅ ᴋᴀʀ ʀʜᴀ ʜᴏᴏɴ..."
-        )
+        LOGGER.error("ʙsᴅᴋ ᴠᴄ ᴛᴏ ᴏɴ ᴋᴀʀʟᴇ  ʟᴏɢ ɢʀᴏᴜᴘ\ᴄʜᴀɴɴᴇʟ ᴋɪ.\n\n ᴏɴ ᴋᴀʀᴋᴇ ᴀᴀ ᴛᴀʙ ᴛᴀᴕ ʙᴏᴛ ʙᴀɴᴅ ᴋᴀʀ ʀʜᴀ ʜᴏᴏɴ...")
         exit()
     except:
         pass
     await Dil.decorators()
-    LOGGER("AarohiX").info(
-        "- تم تنصيب سورس تيبثون بنجاح "
-    )
+    LOGGER.info("- تم تنصيب سورس تيبثون بنجاح")
     await azkar()
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AarohiX").info("ᴍᴀᴀ ᴄʜᴜᴅᴀ ᴍᴀɪɴ ʙᴏᴛ ʙᴀɴᴅ ᴋᴀʀ ʀʜᴀ AᴀʀᴏʜɪX Mᴜsɪᴄ Bᴏᴛ...")
-
+    LOGGER.info("ᴍᴀᴀ ᴄʜᴜᴅᴀ ᴍᴀɪɴ ʙᴏᴛ ʙᴀɴᴅ ᴋᴀʀ ʀʜᴀ AᴀʀᴏʜɪX Mᴜsɪᴄ Bᴏᴛ...")
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
